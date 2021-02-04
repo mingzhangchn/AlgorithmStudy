@@ -4,6 +4,7 @@
 #include"SelectSort/SelectSort.h"
 #include"InsertSort/InsertSort.h"
 #include"MergeSort/MergeSort.h"
+#include"QuickSort/QuickSort.h"
 
 int main()
 {
@@ -19,9 +20,12 @@ int main()
     //SortHelper::SortTest("SelectSort", SelectSort, arr, n);
     //SortHelper::SortTest("SelectSort", SelectSort, arr2, n);
     //SortHelper::SortTest("InsertSort", InsertSort, arr, n);    
-    //SortHelper::SortTest("InsertSort", InsertSort, arr2, n);    
+   // SortHelper::SortTest("InsertSort", InsertSort, arr2, n);    
 
+    //SortHelper::SortTest("MergeSortBU", MergeSortBU, arr, n); 
     SortHelper::SortTest("MergeSort", MergeSort, arr, n); 
+    SortHelper::SortTest("QuickSort", QuickSort, arr, n);
+    SortHelper::SortTest("QuickSort", QuickSort2, arr, n);
 
 
 

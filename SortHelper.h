@@ -6,6 +6,7 @@
 #include<cstdio>
 #include<string>
 #include<cassert>
+#include<algorithm>
 
 namespace SortHelper{
 
@@ -68,7 +69,7 @@ void SortTest(const std::string &name, void(*sortFun)(T[], int), T arr[], int n)
     sortFun(arr, n);
     clock_t end = clock();
 
-    printf("Use time:%f\n", double(end - start)/CLOCKS_PER_SEC);
+    printf("%s Use time:%f\n", name.c_str(), double(end - start)/CLOCKS_PER_SEC);
     
     assert(isSort(arr, n));
 }
